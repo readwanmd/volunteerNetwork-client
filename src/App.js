@@ -1,6 +1,5 @@
 import React, {createContext, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import Home from './Components/Home/Home';
 import VolenteerRegistration from './Components/VolenteerRegistration/VolenteerRegistration';
 import EventTasks from './Components/EventTasks/EventTasks';
