@@ -9,6 +9,7 @@ import CreateEvent from './Components/CreateEvent/CreateEvent';
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import NoMatch from './Components/NoMatch/NoMatch';
 
 export const UserContext = createContext();
 function App() {
@@ -21,33 +22,38 @@ function App() {
             <Home />
           </Route>
           
-          <Route path="/home">
+          <Route exact path="/home">
             <Home />
           </Route>
           
-          <PrivateRoute path="/vregistration/:id">
+          <PrivateRoute exact path="/vregistration/:id">
             <VolenteerRegistration />
           </PrivateRoute>
           
-          <PrivateRoute path="/event">
+          <PrivateRoute exact exact path="/event">
             <EventTasks />
           </PrivateRoute>
 
-          <PrivateRoute path="/events">
-            <Redirect to="/event" />
-          </PrivateRoute>
-          
-          <Route path="/login">
+          <Route exact path="/login">
             <Login />
           </Route>
 
-          <PrivateRoute path="/admin">
+          <PrivateRoute exact path="/admin">
             <Admin />
           </PrivateRoute>
 
-          <Route path="/create-event">
+          <PrivateRoute exact path="/create-event">
             <CreateEvent />
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/events">
+            <Redirect to="/create-event" />
+          </PrivateRoute>
+
+          <Route exact path="*">
+            <NoMatch />
           </Route>
+
         </Switch>
       </Router>
     </UserContext.Provider>

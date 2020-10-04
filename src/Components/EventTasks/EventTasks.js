@@ -9,7 +9,7 @@ const EventTasks = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     const loadEvents = () => {
-        fetch('http://localhost:5000/events?email=' + loggedInUser.email, {
+        fetch('https://pure-badlands-37217.herokuapp.com/events?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {'Content-Type': 'application/json'}
         })
@@ -22,7 +22,7 @@ const EventTasks = () => {
     }
     
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/eventDelete/${id}`, { method: 'DELETE' })
+        fetch(`https://pure-badlands-37217.herokuapp.com/eventDelete/${id}`, { method: 'DELETE' })
         .then(res => res.json())
         .then(result => {
             if (result) {

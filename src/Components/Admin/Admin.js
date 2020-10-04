@@ -15,21 +15,24 @@ const style = {
 const Admin = () => {
     const [allEvents, setAllEvents] = useState([]);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/allEvents')
-            .then(res => res.json())
-            .then(data => setAllEvents(data))
-    }, [allEvents])
+    const loadAllEvents = () => {
+        // useEffect(() => {
+            fetch('https://pure-badlands-37217.herokuapp.com/allEvents')
+                .then(res => res.json())
+                .then(data => setAllEvents(data))
+        // }, [dp])
+    }
+
+    if (allEvents.length === 0) {
+        loadAllEvents();
+    }
 
     const handleDelete = (id) => {
-        console.log(id);
-        fetch(`http://localhost:5000/deleteUserEvent/${id}`, {method: 'DELETE'})
+        fetch(`https://pure-badlands-37217.herokuapp.com/deleteUserEvent/${id}`, {method: 'DELETE'})
             .then(res => res.json())
             .then(result => {
                 if (result) {
-                    // history.push('/event')
-                    // setHide(true)
-                    console.log('deleted')
+                    loadAllEvents();
                 }
             })
     }

@@ -5,11 +5,11 @@ import './CreateEvent.css'
 const CreateEvent = () => {
     const history = useHistory();
     useEffect(() => {
-        fetch('http://localhost:5000/organizations')
+        fetch('https://pure-badlands-37217.herokuapp.com/organizations')
             .then(res => res.json())
             .then(data => {
                 const newEvent = {...event};
-                newEvent.id = data.length + 1;
+                newEvent.id = (data.length + 1).toString();
                 setEvent(newEvent);
             })
     }, [])
@@ -27,11 +27,13 @@ const CreateEvent = () => {
     }
 
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/createEvents', {
+        fetch('https://pure-badlands-37217.herokuapp.com/createEvents', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(event)
         })
+        alert('Success');
+        history.push('/events')
 
         e.preventDefault();
     }

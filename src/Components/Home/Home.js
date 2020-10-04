@@ -8,7 +8,7 @@ const Home = () => {
     const [organizations, setOrganizations] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/organizations')
+        fetch('https://pure-badlands-37217.herokuapp.com/organizations')
         .then(res => res.json())
         .then(data => setOrganizations(data))
     }, [])

@@ -9,7 +9,7 @@ const VolenteerRegistration = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/organizations/'+id)
+        fetch('https://pure-badlands-37217.herokuapp.com/organizations/'+id)
             .then(res => res.json())
             .then(data => {
                 const newUser = {...user};
@@ -20,7 +20,7 @@ const VolenteerRegistration = () => {
     }, [])
 
     const [user, setUser] = useState({
-        id: id,
+        id: toString(id),
         name: loggedInUser.name,
         email: loggedInUser.email,
         photo: '',
@@ -36,7 +36,7 @@ const VolenteerRegistration = () => {
     }
 
     const handleSubmit = (e) => {
-        fetch('http://localhost:5000/addEvents', {
+        fetch('https://pure-badlands-37217.herokuapp.com/addEvents', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
