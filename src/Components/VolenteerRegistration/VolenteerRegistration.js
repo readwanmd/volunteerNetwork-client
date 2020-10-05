@@ -41,7 +41,12 @@ const VolenteerRegistration = () => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
         })
-            .then(res => history.push('/home'))
+            .then(res => {
+                if(res.status === 200){
+                    alert('Registration successful!');
+                    history.push('/event');
+                }
+            })
 
         e.preventDefault();
     }
