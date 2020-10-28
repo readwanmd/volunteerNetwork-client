@@ -1,11 +1,6 @@
 ## 
 
-# Volunteer Network - A voluntary service provider SPA
-
-
-<br />
-
-### [`LIVE`](https://volunteer-network-20.web.app/)
+# Volunteer Network - A voluntary service provider SPA [`LIVE`](https://volunteer-network-20.web.app/)
 
 
 <br />
