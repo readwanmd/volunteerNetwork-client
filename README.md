@@ -27,7 +27,7 @@ Volunteer Network is a voluntary service provider SPA. It’s developed by using
 <br /> <br />
 
 ![](src/images/ss1.png)
-<br />
+
 ![](src/images/ss2.png)
-<br />
+
 ![](src/images/ss3.png)
