@@ -1,6 +1,9 @@
 ## 
 
-# Volunteer Network - A voluntary service provider SPA
+# Volunteer Network - A voluntary service provider SPA [`LIVE`](https://volunteer-network-20.web.app/)
+
+
+<br />
 
 ## Features
 Volunteer Network is a voluntary service provider SPA. It’s developed by using React, React-Router, Html, CSS, reactBootstrap, MaterialUI and Firebase.
@@ -17,10 +20,11 @@ Volunteer Network is a voluntary service provider SPA. It’s developed by using
 - An admin can add more admins.
 - Admin will be able to manage the registered user events.
 - Admin will be able to see all of the users registered events.
-
+- Admin will be able to see all of the users registered events.
 
 <br />
 
+<<<<<<< HEAD
 ### [`LIVE`](https://volunteer-network-20.web.app/)
 ### [`BACKEND REPOSITORY`](https://github.com/readwanmd/volunteerNetwork-server)
 
@@ -31,3 +35,6 @@ Volunteer Network is a voluntary service provider SPA. It’s developed by using
 ![](src/images/ss2.png)
 
 ![](src/images/ss3.png)
+=======
+### [`BACKEND REPOSITORY`](https://github.com/readwanmd/volunteerNetwork-server)
+>>>>>>> aa75390a3395fee20de77e7a7b01370d375600ea
