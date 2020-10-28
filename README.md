@@ -17,7 +17,6 @@ Volunteer Network is a voluntary service provider SPA. It’s developed by using
 - An admin can add more admins.
 - Admin will be able to manage the registered user events.
 - Admin will be able to see all of the users registered events.
-- Admin will be able to see all of the users registered events.
 
 <br />
 
