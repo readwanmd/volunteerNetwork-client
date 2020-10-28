@@ -29,7 +29,7 @@ function App() {
             <VolenteerRegistration />
           </PrivateRoute>
           
-          <PrivateRoute exact exact path="/event">
+          <PrivateRoute exact path="/event">
             <EventTasks />
           </PrivateRoute>
 
