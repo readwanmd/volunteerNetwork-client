@@ -28,7 +28,7 @@ const NavBar = () => {
                             <Button variant="primary" className="mr-2">Register</Button>
                         </Link>
                         <Link to="/admin">
-                            <Button variant="dark" className="mt-1">Admin</Button>
+                            <Button variant="dark">Admin</Button>
                         </Link>
                     </>
                 }
