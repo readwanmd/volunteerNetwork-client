@@ -7,12 +7,14 @@ const NavBar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     return (
-        <Navbar>
+        <Navbar expand="lg">
             <Navbar.Brand>
                 <Link to="/">
                     <img style={{width:"202px", height: '60px'}} src="https://i.ibb.co/C1cQTyY/Group-1329.png" alt=""/>
                 </Link>
             </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
                 <Nav.Link><Link to="/home">Home</Link></Nav.Link>
                 <Nav.Link><Link to="/event">My Events</Link></Nav.Link>
@@ -23,14 +25,15 @@ const NavBar = () => {
                     loggedInUser.email ? <p className="ml-2 mt-2"><strong>{loggedInUser.name}</strong></p> : 
                     <>
                         <Link to="/login">
-                            <Button variant="primary" className="ml-2 mr-2">Register</Button>
+                            <Button variant="primary" className="mr-2">Register</Button>
                         </Link>
                         <Link to="/admin">
-                            <Button variant="dark" className="ml-2">Admin</Button>
+                            <Button variant="dark" className="mt-1">Admin</Button>
                         </Link>
                     </>
                 }
             </Nav>
+            </Navbar.Collapse>
         </Navbar>
     );
 };
