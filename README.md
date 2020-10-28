@@ -1,7 +1,4 @@
-## 
-
 # Volunteer Network - A voluntary service provider SPA [`LIVE`](https://volunteer-network-20.web.app/)
-
 
 <br />
 
@@ -21,7 +18,9 @@ Volunteer Network is a voluntary service provider SPA. It’s developed by using
 - Admin will be able to manage the registered user events.
 - Admin will be able to see all of the users registered events.
 - Admin will be able to see all of the users registered events.
+
 <br />
+
 ### [`BACKEND REPOSITORY`](https://github.com/readwanmd/volunteerNetwork-server)
 
 <br /> <br />
