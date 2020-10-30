@@ -1,9 +1,9 @@
-# Volunteer Network - A voluntary service provider SPA [`LIVE`](https://volunteer-network-20.web.app/)
+# Volunteer Network - A fullstack voluntary service provider SPA [`LIVE`](https://volunteer-network-20.web.app/)
 
 <br />
 
 ## Features
-Volunteer Network is a voluntary service provider SPA. It’s developed by using React, React-Router, Html, CSS, reactBootstrap, MaterialUI and Firebase.
+Volunteer Network is a fullstack voluntary service provider single page application. It’s developed by using React, React-Router, Html, CSS, reactBootstrap, MaterialUI and Firebase.
 
 
 #### User 
